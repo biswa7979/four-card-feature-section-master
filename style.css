@@ -1,0 +1,141 @@
+@import url(https://fonts.google.com/specimen/Poppins);
+:root{
+    
+--Red: hsl(0, 78%, 62%);
+--Cyan: hsl(180, 62%, 55%);
+--Orange: hsl(34, 97%, 64%);
+--Blue: hsl(212, 86%, 64%);
+
+
+
+--Very-Dark-Blue: hsl(234, 12%, 34%);
+--Grayish-Blue: hsl(229, 6%, 66%);
+--Very-Light-Gray: hsl(0, 0%, 95%);
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+.light{
+    font-weight: lighter;
+    color: var(--Very-Dark-Blue);   
+     font-size: 1.8rem;
+     word-spacing: .2rem;
+}
+h1,
+h2{
+    color: var(--Very-Dark-Blue);
+    font-weight: 800;
+   
+}
+h1{
+    font-size:1.6rem;
+    margin-bottom: .8rem;
+}
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+p{
+    color:var(--Grayish-Blue) ;
+    
+}
+.big-text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+body{
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+    padding:4rem 0 ;
+    background-color: var(--Very-Light-Gray);
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container{
+    text-align: center;
+    line-height: 2.5rem;
+    margin-bottom: 4rem;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.box{
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem 1rem;
+    height:17rem;
+    line-height:1.5rem;
+    letter-spacing: 0.1rem;
+    position: relative;
+    border-radius: .5rem;
+    
+}
+.c{
+    border-top: .4rem solid var(--Cyan);
+}
+.r{
+    border-top: .4rem solid var(--Red);
+}
+.o{
+    border-top: .4rem solid var(--Orange);
+}
+.b{
+    border-top: .4rem solid var(--Blue);
+}
+img{
+position: absolute;
+right: 1rem;
+bottom: 2rem;
+}
+#box-2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+@media screen and (min-width: 600px){
+    .wrap{
+        
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+main{
+    width:80%;
+    padding-bottom: 4rem;
+}
+section{
+flex-direction: row;
+gap:1rem;
+    
+}
+.b,
+.c{
+   width: 33vw;
+   margin-top: 15%;
+}
+#box-2 .box{
+    max-width: 33vw;
+}
+
+
+}
